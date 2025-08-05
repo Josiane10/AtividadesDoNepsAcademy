@@ -1,0 +1,21 @@
+// A variável input contém a entrada descrita no exercício
+const fs = require("fs");
+const input = fs.readFileSync(0, "utf8");
+
+// Seu código vai aqui
+
+let lines = input.trim().split("\n");
+
+let N = parseInt(lines[0]); // número de dias
+let soma = 0;
+let dias = 0;
+
+for (let i = 1; i <= N; i++) {
+    soma += parseInt(lines[i]);
+    dias++;
+    if (soma >= 1000000) {
+        break;
+    }
+}
+
+console.log(dias);
