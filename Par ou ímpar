@@ -1,0 +1,17 @@
+// Lendo a entrada do exercício
+const fs = require("fs");
+const input = fs.readFileSync(0, "utf8");
+
+let Bino = parseInt(input.split("\n")[0])
+let Cino = parseInt(input.split("\n")[1])
+
+// Seu código vai aqui
+
+let resultado = Bino + Cino;
+
+if(resultado % 2 === 0){
+console.log('Bino');
+}else{
+    console.log('Cino');
+}
+
