@@ -1,0 +1,13 @@
+// A variável input contém a entrada descrita no exercício
+const fs = require("fs");
+const input = require("fs").readFileSync(0, "utf8").split("\n");
+
+// Seu código vai aqui
+let total = 0;
+
+for(let i = 1; i <= +input[0]; i++){
+  let l = +input[i].split(" ")[0];
+  let c = +input[i].split(" ")[1];
+  if(l > c) total += c;
+}
+console.log(total);
