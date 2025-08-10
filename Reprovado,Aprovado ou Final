@@ -1,0 +1,17 @@
+// A variável input contém a entrada descrita no exercício
+const fs = require("fs");
+const input = fs.readFileSync(0, "utf8").trim().split("\n");
+
+// Seu código vai aqui
+const N1 = parseFloat(input[0]);
+const N2 = parseFloat(input[1]);
+
+const media = (N1 * 2 + N2 * 3) / 5;
+
+if (media >= 7) {
+  console.log("Aprovado");
+} else if (media < 3) {
+  console.log("Reprovado");
+} else {
+  console.log("Final");
+}
